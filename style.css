@@ -1,0 +1,131 @@
+/*COLORES QUE ESTOY USANDO 
+BEIGE:#EDEBE8
+GRIS:#2F2F30 */
+
+/*ESTILO DE LETRA*/
+.roboto-custom {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/*Header*/ 
+header {
+	background-color: #EDEBE8; /*COLOR BEIGE QUE ESTOY USANDO*/
+	padding: 15px;
+	display: flex;
+	justify-content: space-between; /*para separar el título y el nav */
+}
+
+button {
+  margin-left: 10px;      /*aca se usa para el espacio entre botones*/
+  background-color: black;
+  border: none;
+  color: #EDEBE8;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  
+}
+h1 {
+	color: #2F2F30;
+	font-family: "Eagle Lake", serif;
+	font-size: 30px;
+	text-align: left;
+}
+
+body {
+	background-color:#2F2F30;
+}
+
+
+/*COMO ANIMAR LOS TITULOS*/ /*MAIN*/
+
+.animated-title {
+  color: #EDEBE8;
+  font-size: 50px;
+  text-align: center;
+  overflow: hidden;           /* oculta el texto que aún no aparece */
+  border-right: 2px solid white; /* cursor tipo máquina */
+  white-space: nowrap;        /* que todo quede en una línea */
+  width: 0;                   /* empezamos desde cero */
+  margin: 0 auto; /* centra el bloque */
+  padding: 30px;
+  animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 22ch; } 
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: white; }
+}
+
+.description {
+  color: #EDEBE8;
+  font-size: 20px;
+  text-align: center;      
+  max-width: 600px;        
+  margin: 20px auto 0;     
+  line-height: 1.5;   
+font-family: "Roboto", sans-serif;  
+}
+
+section button {
+	background-color: #EDEBE8;
+	border: none;
+	color: black;
+	border-radius: 8px;
+	padding: 10px;
+	width: 150px;
+	height: 70px;
+	font-size: 20px;
+	font-family: "Roboto" , sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec1 {
+	text-align: left;
+}
+
+.sec2 {
+	text-align: left;
+	padding: 10px;
+}
+
+.sec3 {
+	text-align: right;
+	padding: 10px;
+}
+
+h3 {
+	color: white;
+	font-size: 30px;
+	font-family: "Roboto" , sans-serif;
+	}
+p {
+	color: white;
+	font-size: 15px;
+	font-family: "Roboto" , sans-serif;
+	}
+
+
+/*FOOTER*/	
+
+footer {
+	background-color: #EDEBE8;
+	position: bottom;
+	padding: 20px;
+}
+footer p {
+	color: 2F2F30;
+	font-size: 15px;
+
+}

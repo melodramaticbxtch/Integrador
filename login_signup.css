@@ -1,0 +1,74 @@
+/*COLORES QUE ESTOY USANDO 
+BEIGE:#EDEBE8
+GRIS:#2F2F30 */
+
+header {
+	padding: 15px;
+	font-family: "Roboto", sans-serif;
+}
+
+h1 {
+	color: #EDEBE8;
+	text-align: center;
+	font-family:font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: #2F2F30;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	
+}
+form {
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	padding: 25px;
+}
+   .login-box {
+      width: 300px;
+      margin: 100px auto; 
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: black;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+      font-family: "Roboto", sans-serif;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+	  
+    }
+
+    .login-box label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+	  color: white;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: gray;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #0056b3;
+    }	
