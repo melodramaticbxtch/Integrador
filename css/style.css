@@ -1,14 +1,16 @@
-/*COLORES QUE ESTOY USANDO 
-BEIGE:#EDEBE8
-GRIS:#2F2F30 */
-
+@charset "UTF-8";
+/*Variables de colores*/
+/* actual: beige */
+/* actual: gris */
+/* actual: negro */
+/* actual: gris claro */
 /* --------------------------
    TIPOGRAFÍA
 --------------------------- */
 .roboto-custom {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; 
+  font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
@@ -19,7 +21,6 @@ GRIS:#2F2F30 */
   font-weight: 400;
   font-style: normal;
 }
-
 
 /* --------------------------
    ESTILOS GENERALES
@@ -86,29 +87,34 @@ button {
   font-size: 70px;
   text-align: center;
   overflow: hidden;
-  border-right: 2px solid white; 
+  border-right: 2px solid white;
   white-space: nowrap;
   width: 0;
   margin: 0 auto;
   padding: 15px;
-  animation: typing 3s steps(20, end) forwards,
-             blink 0.75s step-end infinite;
+  animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 22ch; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  }
 }
-
 @keyframes blink {
-  50% { border-color: transparent; }
-  100% { border-color: white; }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
 }
-
 .description {
-  color: #EDEBE8;
+  color: color_uno;
   font-size: 25px;
-  text-align: center;      
+  text-align: center;
   max-width: 600px;
   margin: 20px auto 0;
   line-height: 1.5;
@@ -153,7 +159,6 @@ button {
   color: black;
 }
 
-
 /* --------------------------
    FRASE ANIMADA
 --------------------------- */
@@ -161,7 +166,6 @@ button {
   font-size: 80px;
   margin: 20px 0;
   font-family: "Lexend", sans-serif;
-  
 }
 
 .static-text {
@@ -184,18 +188,40 @@ button {
   opacity: 0;
 }
 
-.dynamic-text span:nth-child(1) { animation-delay: 0s; }
-.dynamic-text span:nth-child(2) { animation-delay: 2s; }
-.dynamic-text span:nth-child(3) { animation-delay: 4s; }
-
-@keyframes slide {
-  0%   { opacity: 0; transform: translateY(100%); }
-  10%  { opacity: 1; transform: translateY(0); }
-  30%  { opacity: 1; transform: translateY(0); }
-  40%  { opacity: 0; transform: translateY(-100%); }
-  100% { opacity: 0; transform: translateY(-100%); }
+.dynamic-text span:nth-child(1) {
+  animation-delay: 0s;
 }
 
+.dynamic-text span:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.dynamic-text span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
 /* --------------------------
    FOOTER
 --------------------------- */
@@ -206,7 +232,9 @@ footer {
 }
 
 footer p {
-  color: #2F2F30; 
+  color: #2F2F30;
   font-size: 15px;
   margin: 0;
 }
+
+/*# sourceMappingURL=style.css.map */

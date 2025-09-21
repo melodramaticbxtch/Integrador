@@ -1,8 +1,9 @@
 /*Variables de colores*/ 
-color_base:#EDEBE8; /*actual: beige*/
-color_secundario:#2F2F30; /*actual: gris*/
-color_section1: #1e1e1e; /*actual: negro*/
-color_section2: #e5e5e5; /*actual: gris claro/
+$color_base: #EDEBE8;         /* actual: beige */
+$color_secundario: #2F2F30;   /* actual: gris */
+$color_section1: #1e1e1e;     /* actual: negro */
+$color_section2: #e5e5e5;     /* actual: gris claro */
+
 
 
 /* --------------------------
@@ -28,7 +29,7 @@ color_section2: #e5e5e5; /*actual: gris claro/
    ESTILOS GENERALES
 --------------------------- */
 body {
-  background-color: color_secundario;
+  background-color: $color_secundario;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -52,7 +53,7 @@ section {
    HEADER
 --------------------------- */
 .header-container {
-  background-color: color_base; /* beige */
+  background-color: $color_base; /* beige */
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -71,7 +72,7 @@ button {
   margin-left: 10px;
   background-color: black;
   border: none;
-  color: color_base;
+  color: $color_base;
   border-radius: 15px;
   padding: 10px;
   width: 100px;
@@ -85,7 +86,7 @@ button {
 --------------------------- */
 .animated-title {
   font-family: "Roboto", sans-serif;
-  color: color_base;
+  color: $color_base;
   font-size: 70px;
   text-align: center;
   overflow: hidden;
@@ -122,18 +123,18 @@ button {
 --------------------------- */
 .sec1 {
   text-align: left;
-  background-color: color_section1; /* negro */
+  background-color: $color_section1; /* negro */
 }
 
 .sec2 {
   text-align: left;
   padding: 10px;
-  background-color: color_section2; /* gris claro */
+  background-color: $color_section2; /* gris claro */
   color: black;
 }
 
 .botonsec2 button {
-  background-color: color_secundario;
+  background-color: $color_secundario;
   border: none;
   color: white;
   border-radius: 8px;
@@ -145,7 +146,7 @@ button {
 }
 
 .text-block h3 {
-  color: color_secundario;
+  color: $color_secundario;
   align-self: left;
   font-family: "Roboto", sans-serif;
 }
@@ -203,13 +204,13 @@ button {
    FOOTER
 --------------------------- */
 footer {
-  background-color: color_base;
+  background-color: $color_base;
   padding: 20px;
   text-align: center;
 }
 
 footer p {
-  color: color_secundario; 
+  color: $color_secundario; 
   font-size: 15px;
   margin: 0;
 }
