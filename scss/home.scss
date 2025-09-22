@@ -1,0 +1,197 @@
+/* --------------------------
+   COLORES
+--------------------------- */
+$color_base: #EDEBE8;
+$color_secundario: #2F2F30;
+$color_section1: #1e1e1e;
+$color_section2: #e5e5e5;
+
+/* --------------------------
+   TIPOGRAFÍA
+--------------------------- */
+.roboto-custom {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.lexend-letra {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-base: 'Roboto', sans-serif;
+$font-titulo: 'Lexend', sans-serif;
+
+ /* ----- Reset básico ----- */
+body {
+  background: $color_secundario;
+  color: $color_base;
+  font-family: $font-base;
+}
+
+    /* ----- Banner principal ----- */
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(70%);
+}
+
+/* Degradado en la parte de abajo */
+.banner::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* cuánto ocupa el difuminado */
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+/* Botón "Create New Set" */
+.top-actions {
+  display: flex;
+  justify-content: flex-end; /* lo manda a la derecha */
+  padding: 15px 20px;
+  background-color: $color_secundario; 
+}
+
+.btn-create {
+  background-color: $color_base;
+  color: $color_secundario;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-create:hover {
+  background-color: $color_base;
+}
+
+
+    /* ----- Navegación ----- */
+a {
+    color: $color_base;           /* color normal */
+    text-decoration: none;  /* opcional, quita el subrayado */
+}
+
+a:visited,
+a:hover,
+a:active {
+    color: $color_base;           /* mismo color para todos los estados */
+}
+
+nav {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 20px;
+  padding: 30px;
+}
+nav ul li a { 
+   color: $color_base;
+   text-decoration: none;
+   font-weight: bold;
+   transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+    /* ----- Contenedor de cajas ----- */
+.contenedor {
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+.caja {
+  height: 200px;   /* alto fijo */
+  width: 80%;     /* se adapta al grid */
+  overflow: hidden;
+}
+
+.contenedor {
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+
+.cajas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+    /* ----- Estilo de las cajas/cards ----- */
+    .caja {
+      background: #2f2f30;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      color: #EDEBE8;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .caja:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    }
+
+    .caja img {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .caja h2 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .caja p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* ----- Responsividad ----- */
+    @media (max-width: 768px) {
+      .banner h1 {
+        font-size: 2rem;
+      }
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .banner img {
+        height: 200px;
+      }
+      .banner h1 {
+        font-size: 1.5rem;
+      }
+      .caja img {
+        height: 140px;
+      }
+    }

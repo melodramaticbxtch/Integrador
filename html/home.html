@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="home.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/home.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<aside>
-			<h2>Menú</h2>
-			<ul class="sidebar">
-				<li><a href="home.html">Inicio</a></li>
-				<li><a href="recientes.html">Recientes</a></li>
-				<li><a href="favoritos.html">Favoritos</a></li>
-				<li>Colecciones</li>
-			</ul>
-		</aside>
+		<header class="banner">
+    		<img src="../assets/banner.jpeg" alt="Imagen principal">
+    		
+  		</header>
+		  <!-- Botón de acción principal -->
+ 		<div class="top-actions">
+    		<button class="btn-create">Create New Set</button>
+		</div>
+		
+		<nav>
+			<a href="#">Home</a> |
+			<a href="#">Recientes</a> |
+			<a href="#">Favoritos</a> |
+		</nav>
+		
+		 <!-- Contenedor de cajas -->
+  		<main class="contenedor">
+    		<section class="cajas">
+      			<div class="caja">
+        			<h2>flashcard/h2>
+        			<p>Descripción corta...</p>
+      			</div>
 
-		<main>
-			<h1>Empieza a Crear!</h1>
-			<p>Aca va el contenido principal.</p>
-			
-			<div class="container">
-			<div class="box">Crear Coleccion +</div>
-			<div class="box">Coleccion 1</div>
-			<div class="box">Coleccion 2</div>
-			<div class="box">Coleccion 3</div>
-			</div>
-		</main>
+      			<div class="caja">
+        			<h2>Nombre del personaje</h2>
+        			<p>Descripción corta...</p>
+      			</div>
+
+      			<div class="caja">
+        			<h2>Nombre del personaje</h2>
+       				<p>Descripción corta...</p>
+      			</div>
+
+
+    		</section>
+  		</main>
 	</body>
 </html>
